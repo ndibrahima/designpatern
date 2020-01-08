@@ -1,2 +1,2 @@
-# BurgerApp
+# MealApp
  
