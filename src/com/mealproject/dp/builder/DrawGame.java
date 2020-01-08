@@ -1,10 +1,11 @@
 package com.mealproject.dp.builder;
 
-public  class Coke extends ColdDrink {
+public  class DrawGame extends Game {
+
 
 	@Override
 	public String name() {
-		return "Coke";
+		return "Draw Game";
 	}
 
 	@Override
@@ -12,7 +13,9 @@ public  class Coke extends ColdDrink {
 		return 1f;
 	}
 
-	public Coke() {
-		super("Coke", 1f);
+	public DrawGame() {
+		super("name", 1f);
+		
 	}
+
 }

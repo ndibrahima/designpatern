@@ -1,18 +1,19 @@
 package com.mealproject.dp.builder;
 
-import com.mealproject.dp.builder.Bottle;
 import com.mealproject.dp.builder.Packing;
+import com.mealproject.dp.builder.Cadeau;
 
-public abstract class ColdDrink implements Item {
+public abstract class Game implements Item{
 
+	
 	String name;
 	float price;
 	Packing packing;
 
-	public ColdDrink(String name, float price) {
+	public Game(String name, float price) {
 		this.name = name;
 		this.price = price;
-		this.packing = new Bottle();
+		this.packing = new Cadeau();
 	}
 
 	public String name() {
@@ -28,7 +29,7 @@ public abstract class ColdDrink implements Item {
 	}
 
 	public String toString() {
-		return ("[name: " + getName() + ", price: " + getPrice() + ", packing: " + getPacking() + "]\n          ");
+		return ("[name: " + getName() + ", price: " + getPrice() + " packing: " + getPacking() + "]\n          ");
 	}
 
 	public String getName() {
@@ -55,5 +56,6 @@ public abstract class ColdDrink implements Item {
 		this.packing = packing;
 	}
 
+	
 
 }

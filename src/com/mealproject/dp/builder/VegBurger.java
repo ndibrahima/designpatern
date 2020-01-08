@@ -3,10 +3,14 @@ package com.mealproject.dp.builder;
 public class VegBurger extends Burger {
 	
 	
+	@Override
+	public String name() {
+		return "Burger Vegé";
+	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	@Override
+	public float price() {
+		return 100f;
 	}
 
 }

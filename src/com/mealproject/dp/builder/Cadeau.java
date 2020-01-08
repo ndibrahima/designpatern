@@ -1,11 +1,11 @@
 package com.mealproject.dp.builder;
 
-public class Bottle implements Packing {
+public class Cadeau implements Packing {
 
 	String name;
 
-	public Bottle() {
-		this.name = "Bottle";
+	public Cadeau() {
+		this.name = "Cadeau";
 	}
 
 	public String toString() {

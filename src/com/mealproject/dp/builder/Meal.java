@@ -7,16 +7,38 @@ import  com.mealproject.dp.builder.Item;
 
 public class Meal {
 	
+	float Cost;
+	
+	public List<Item> getItems() {
+		return items;
+	}
 
-	public Meal () {
-		// TODO Auto-generated constructor stub
+	@Override
+	public String toString() {
+		return "Meal [Cost=" + Cost + "]";
 	}
 	
+	public void setItems(List<Item> items) {
+		this.items = items;
+	}
+
+	public void setCost(float cost) {
+		Cost = cost;
+	}
+
 	private List<Item> items = new ArrayList<>();
 	
-	public void addItem() {
-		 
-
+	public void addItem(Item item) {
+		this.items.add(item);
+		this.calculCost();
+	}
+	
+	public void calculCost() {
+		float newCost = 0;
+		for (Item item: items) {
+			newCost += item.price();
+		}
+		setCost(newCost);
 	}
 	
 	public float getCost() {
@@ -31,6 +53,10 @@ public class Meal {
 		return price;
 	}
 	
+	public List<Item> getMeals() {
+		return items;
+	}
+	
 	public void showItems() {
 		
 		for (Item item : items) {
@@ -38,20 +64,11 @@ public class Meal {
 		}
 	}
 	
-	
-	
-	
-	
-	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
 
-	public Meal build() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }
