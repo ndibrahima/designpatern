@@ -1,2 +1,3 @@
-module BurgerApp {
+module AbstractFactory {
+	requires java.desktop;
 }
