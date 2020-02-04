@@ -42,6 +42,24 @@ public class AbstractFactoryPatternDemo {
 		FactoryProducer.getFactory(ShapeFactory.SHAPE).getShape(Circle.CIRCLE);
 		 // call draw method of Shape Circle
 		 myShape.Draw();
+		 
+		 System.out.println("Exercice 2");
+		 
+		 
+		//get directly an item with factory auto selecting
+		 Item item = FactoryProducer.getItem(AllObjects.BLUE);
+		 System.out.println("this is a " + item.getName());
+		 item = FactoryProducer.getItem(AllObjects.GREEN);
+		 System.out.println("this is a " + item.getName());
+		 item = FactoryProducer.getItem(AllObjects.RED);
+		 System.out.println("this is a " + item.getName());
+		 item = FactoryProducer.getItem(AllObjects.SQUARE);
+		 System.out.println("this is a " + item.getName());
+		 item = FactoryProducer.getItem(AllObjects.RECTANGLE);
+		 System.out.println("this is a " + item.getName());
+		 item = FactoryProducer.getItem(AllObjects.CIRCLE);
+		 System.out.println("this is a " + item.getName());
+
 
 	}
 

@@ -34,5 +34,8 @@ public  class ColorFactory extends AbstractFactory{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	
 	
 }

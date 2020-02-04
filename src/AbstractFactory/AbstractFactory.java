@@ -8,6 +8,5 @@ public abstract  class AbstractFactory {
 	public abstract  Color getColor(String color);
 	
 	
-	
 
 }

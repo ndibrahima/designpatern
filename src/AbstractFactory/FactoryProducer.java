@@ -16,5 +16,18 @@ public class FactoryProducer {
 		return null;
 	}
 
+	public static Item getItem(String type) {
+		
+		Item item = (Item) new ShapeFactory().getShape(type);
+		
+		if (item == null) {
+			item = (Item) new ColorFactory().getColor(type);
+		}
+			return item;
+		}
+
 	
-}
+	}
+
+	
+
